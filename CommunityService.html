@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src=js/script.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Connor-T-East">
+    <title>Community Service</title>
+  </head>
+  <body>
+      <div class="Logo1" id="logo" onClick="navclose()"><img src="images/snowglobe.svg" alt="Connors Logo"></div>
+    <nav id ="navigation">
+      <div class="Logo">
+        <img src="images/snowglobe.svg" alt="Connors Logo">
+          </div>
+            <div class="SpacedNav">
+          <a href="index.html" class="active">Home </a>
+          <a href="Resume.html">Resume & Cover </a>
+          <a href="BestWork.html">BestWork </a>
+          <a href="CommunityService.html">Community Service </a>
+              <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                  <a href="Rewards.html" class="space">Honors and Awards</a>
+                  <a href="MyFuture.html">My Path</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="TopOfFuture">
+    <h1 class="heroname">Community Service Reflection</h1>
+    </div>
+    <div class="trapezoid2"></div>
+    <div class="CommunityServiceMain">
+      <h2 class="center">Past Community Service Reflection Paper.</h2>
+<embed src ="images/VolunteerReflection.pdf" class="reflection">
+
+
+
+
+
+    </div>
+    <footer>
+    <h3 onclick="showinfo()">Contact Information</h3>
+    <ul id="footerlist">
+      <li>luckylapislove@gmail.com</li>
+      <li>Phone : (802)-343-1205</li>
+    </ul>
+    </footer>
+    </body>
+        <script type="text/javascript">
+        var x = document.getElementById('navigation');
+        var y = 1;
+        var z = document.getElementById('logo');
+        var infolist = document.getElementById('footerlist');
+        function navclose(){
+          if (y > 0){
+            x.style.animation = 'Fadeout 2s';
+            z.style.animation = 'shimmy 1s';
+            x.style.opacity = "0";
+            y = 0;
+          }else{
+            x.style.animation = 'Fadein 2s';
+            z.style.animation = 'shimmy 1s';
+            x.style.opacity="1";
+            y = 1;
+          }
+        }
+        function showinfo() {
+          infolist.style.animation = 'Fadein 1s';
+          infolist.style.opacity = "1"
+
+      }
+        </script>
+    </html>

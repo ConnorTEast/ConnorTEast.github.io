@@ -1,158 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src=js/script.js></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/loading.js">
-
-  </script>
-  <script src="js/script.js">
-
-  </script>
-  <title>Connors portfollio</title>
-</head>
-
-<body id="Body">
-
-  <div id="LoadScreen">
-    <h1 class="loading">Loading</h1>
-  </div>
-  <!-- <div class="menu">
-    <article class="grid">
+    <meta name="author" content="Connor-T-East">
+    <title>Home</title>
+  </head>
+  <body>
+      <div class="Logo1" id="logo" onClick="navclose()"><img src="images/snowglobe.svg" alt="Connors Logo"></div>
+    <nav id ="navigation">
       <div class="Logo">
-        <img src="img/notlogo.jpg" alt="Logo" class="logo">
-        <small>Welcome to my menu I hope you enjoy.</small>
-      </div>
-      <div class="main">
-        <h2>Text Size Slider</h2>
-        <div class="slideContainer">
-          <input type="range" min="16" max="42" value="16" class="slider" id="myRange">
-          <p>Value: <span id="value"></span></p>
-        </div>
-      </div>
-    </article>
-  </div> -->
-
-  <nav>
-      <a href="index.html"><img src="images/snowglobe.svg" alt="" class="logo"> </a>
-    <!-- <a href="#"><span class="fontsizelargemenu">Menu</span> &#9547;</a> -->
-  </nav>
-  <div class="Backgrounddiv">
-    <video class="video-background"src="images/background.mkv" autoplay>
-
-    </video>
-    <div class="name">
-      <div class="heroname">
-        <h1>Connor Thomas East</h1>
-        <h3>Aspiring web designer</h3>
-      </div>
-    </div>
-  </div>
-  <article class="firstbox">
-    <section class="gridonetwo highertop">
-
-      <div class="container">
-    <a href="About.html">    <img src="img/placeholder.jpg" alt="" class="img"></a>
-        <div class="Overlay">
-       <div class="TextOverlay">
-              <a href="About.html" class="Imagehoverbox"><h2>Click to Enter!</h2></a>
+        <img src="images/snowglobe.svg" alt="Connors Logo">
+          </div>
+            <div class="SpacedNav">
+          <a href="index.html" class="active">Home </a>
+          <a href="Resume.html">Resume & Cover </a>
+          <a href="BestWork.html">BestWork </a>
+          <a href="CommunityService.html">Community Service </a>
+              <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                  <a href="Rewards.html" class="space">Honors and Awards</a>
+                  <a href="MyFuture.html">My Path</a>
           </div>
         </div>
       </div>
-      <article class="text">
-        <h2 class="textunderline">About</h2>
-        <p class="textsection">This section is about me</p>
-      </article>
-    </section>
-    <div class="trapezoid1">
-    </div>
-  </article>
-  <article class="firstbox">
-    <section class="gridonetwo">
-      <div class="container">
-        <a href="photography.html">  <img src="img/placeholder.jpg" alt="" class="img"></a>
-        <div class="Overlay">
-          <div class="TextOverlay">
-            <a href="photography.html" class="Imagehoverbox">
-              <h2>Click to Enter!</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <article class="text">
-        <h2 class="textunderline">Photography</h2>
-        <p class="textsection">This section is about the photography I have done this year</p>
-      </article>
-    </section>
-    <div class="trapezoid1">
-    </div>
-  </article>
-  <article class="firstbox">
-    <section class="gridonetwo">
+    </nav>
 
-      <div class="container">
-      <a href="miscellaneous.html">  <img src="img/placeholder.jpg" alt="" class="img"></a>
-        <div class="Overlay">
-          <div class="TextOverlay">
-            <a href="miscellaneous.html" class="Imagehoverbox">
-              <h2>Click to Enter!</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <article class="text">
-        <h2 class="textunderline">miscellaneous</h2>
-        <p class="textsection">This section is about the artistic projects I have done.</p>
-      </article>
-    </section>
-    <div class="trapezoid1">
+    <div class="TopOfIndex">
+<h1 class="heroname">Connor East's Portfolio</h1>
+<div class="trapezoid1"></div>
     </div>
-  </article>
-  <article class="firstbox">
-    <section class="gridonetwo">
 
-      <div class="container">
-  <a href="funfacts.html">  <img src="img/placeholder.jpg" alt="" class="img"></a>
-        <div class="Overlay">
-          <div class="TextOverlay">
-            <a href="funfacts.html" class="Imagehoverbox">
-              <h2>Click to Enter!</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <article class="text">
-        <h2 class="textunderline">Fun Facts</h2>
-        <p class="textsection">This section is Fun facts about yours truly</p>
-      </article>
-    </section>
-    <div class="trapezoid1">
-    </div>
-  </article>
-  <article class="firstbox">
-    <section class="gridonetwo">
+<div class="Aboutme">
+<h1 class="title">About Me</h1>
+<img src="images/me.jpg" alt="" class="AboutMeImage">
+<p>Hello, my name is Connor East, and I'm up and coming web designer who loves creative design and relaxing. Although I am still in high school, I have had many life experiences others have not. This ranges from moving across the world to working in an understaffed Subway. I hope to be successful in school and in my future career in every way possible. After I finish school, I plan to attend Community College of Vermont until I have completed all the necessary undergraduate classes. After I have finished any undergraduate classes I will be transferring to a College with the specific classes I'm looking for.</p>
+</div>
+<footer>
+<h3 onclick="showinfo()">Contact Information</h3>
+<ul id="footerlist">
+  <li>luckylapislove@gmail.com</li>
+  <li>Phone : (802)-343-1205</li>
+</ul>
+</footer>
+  </body>
+  <script type="text/javascript">
+  var x = document.getElementById('navigation');
+  var y = 1;
+  var z = document.getElementById('logo');
+  var infolist = document.getElementById('footerlist');
+  function navclose(){
+    if (y > 0){
+      x.style.animation = 'Fadeout 2s';
+      z.style.animation = 'shimmy 1s';
+      x.style.opacity = "0";
+      y = 0;
+    }else{
+      x.style.animation = 'Fadein 2s';
+      z.style.animation = 'shimmy 1s';
+      x.style.opacity="1";
+      y = 1;
+    }
+  }
+  function showinfo() {
+    infolist.style.animation = 'Fadein 1s';
+    infolist.style.opacity = "1"
 
-      <div class="container">
-  <a href="Resume.html">  <img src="img/placeholder.jpg" alt="" class="img"></a>
-        <div class="Overlay">
-          <div class="TextOverlay">
-            <a href="Resume.html" class="Imagehoverbox">
-              <h2>Click to Enter!</h2>
-            </a>
-          </div>
-        </div>
-      </div>
-      <article class="text">
-        <h2 class="textunderline">Resume</h2>
-        <p class="textsection">This contains my Resume</p>
-      </article>
-    </section>
-    <div class="trapezoid1">
-    </div>
-  </article>
-  <footer>&#9400; Created by: Connor East</footer>
-</body>
-
+}
+  </script>
 </html>
